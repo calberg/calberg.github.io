@@ -10,6 +10,9 @@
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ <script>document.querySelector(".card-flip").classList.toggle("flip");</script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<section style="height:40px;">&nbsp;</section>
 </head>
 
 <body>
@@ -39,113 +42,107 @@
       <div class="form-group row">
         <h1 class= "center gray-text darken-3">Portfolio</h1>
 <!--   Projects Section Row 1   -->
-    <div class="col s12 m4">
-      <div class="col-4">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <div class="card">
-                <div class="card-body">
-                  <div class="form-group row">
-                      <div class="col-11">
-                          <div class="alert-success card-icon">
-                            <div class="chartjs-size-monitor">
-                              <div class="chartjs-size-monitor-expand">
-                                <div class=""></div>
-                              </div>
-                              <div class="chartjs-size-monitor-shrink">
-                                <div class=""></div>
-                              </div>
-                            </div>
-                            <canvas id="exampleChart" class="chartjs-render-monitor" width="400" height="200" style="display: block; width: 400px; height: 200px;"></canvas>
-                          </div>
-                      </div>
-                      <div class="col-1">
-                          <i id="extInfoIcon" class="fas fa-info-circle fa-4x text-info" style="cursor: pointer"></i>
-                      </div>
-                  </div>
-                  
-              </div>
-            </div>
+<div id='container'>
+  <!--   Flip Card 1   -->
+    <div class='card'>
+      <div class='front'>
+        <img src='assets/images/Block-Party.png' class='contact' />
+        <span class='name'>Block Party</span>
+        <hr>
+        <span class='job'> Community Message Board</span>
+      </div>
+      <div class='back'>
+        <span>Built with:</span>
+        <p>Node + Express, Sequelize, Handlebars, Mocha + Chai, Travis CI</p>
+        <a class="btn btn-primary" href="https://calberg.github.io/Block-Party/" role="button">Live</a>
+        <a class="btn btn-secondary" href="https://github.com/calberg/Block-Party" role="button">Github Code</a>
+      </div>
+    </div>
+      <!--   Flip Card 2   -->
+    <div class='card'>
+      <div class='front'>
+        <img src='assets/images/memory.png' class='contact' />
+        <span class='name'>Memory Game</span>
+        <hr>
+        <span class='job'> Full Stack Game </span>
+      </div>
+      <div class='back'>
+        <span>Built with:</span>
+        <p>React.js, MySQL, Express, Node</p>
+        <a class="btn btn-primary" href="https://camp-wannagetajob.herokuapp.com/Memory" role="button">Live</a>
+        <a class="btn btn-secondary" href="https://github.com/calberg/Memory-Game" role="button">Github Code</a>
+      </div>
+    </div>
+          <!--   Flip Card 3   -->
+    <div class='card'>
+      <div class='front'>
+        <img src='assets/images/wannagetajob.png' class='contact' />
+        <span class='name'>Camp Wannagetajob</span>
+        <hr>
+        <span class='job'>- Collection of games and resources to help you prepare for job search -</span>
+      </div>
+      <div class='back'>
+        <span>Built with:</span>
+        <p> React.js, MySQL, Express, Node</p>
+        <a class="btn btn-primary" href="https://camp-wannagetajob.herokuapp.com/" role="button">Live</a>
+        <a class="btn btn-secondary" href="https://github.com/calberg/CampWannaGetaJob" role="button">Github Code</a>
+        </div>
+      </div>
+    
+  
+              <!--   Flip Card 4   -->
+  <div class="form-group row">
+    <div class='card'>
+      <div class='front'>
+        <img src='assets/images/trivia-game.jpg' class='contact' />
+        <span class='name'>Trivia Game</span>
+        <hr>
+        <span class='job'>- Simple trivia application -</span>
+      </div>
+      <div class='back'>
+        <span>Built with:</span>
+        <p>Javascript, HTML, CSS</p>
+        <a class="btn btn-primary" href="https://calberg.github.io/TriviaGame/" role="button">Live</a>
+        <a class="btn btn-secondary" href="https://github.com/calberg/TriviaGame" role="button">Github Code</a>
+        </div>
+      </div>
+    
+    <!--   Flip Card 5   -->
+    <div class='card'>
+        <div class='front'>
+          <img src='assets/images/group-project-1.jpg' class='contact' />
+          <span class='name'>CLM</span>
+          <hr>
+          <span class='job'>- Web application to search for books and their related videos -</span>
+        </div>
+        <div class='back'>
+          <span>Built with:</span>
+          <p> HTML, MySQL, CSS, Bootstrap</p>
+          <a class="btn btn-primary" href="https://calberg.github.io/UCSD-Group-Project-One/" role="button">Live</a>
+          <a class="btn btn-secondary" href="https://github.com/calberg/UCSD-Group-Project-One" role="button">Github Code</a>
           </div>
-          <div class="flip-card-back">
-            <div class="card">
-              <div class="card-body">
-                <div class="form-group row" style="height: 150px">
-                  <h1>CRUM Application</h1>
-                  <p>Community message board application</p>
-                  <a class="btn btn-primary" href="https://calberg.github.io/Block-Party/" role="button">Live</a>
-                  <a class="btn btn-secondary" href="https://github.com/calberg/calberg.github.io" role="button">Github Code</a>
-                </div>
-              </div>
-            </div>
+        </div>
+      
+      <!--   Flip Card 6   -->
+    <div class='card'>
+        <div class='front'>
+          <img src='assets/images/word-guess.jpg' class='contact' />
+          <span class='name'>Word Guess</span>
+          <hr>
+          <span class='job'>- Hangman style game application -</span>
+        </div>
+        <div class='back'>
+          <span>Built with:</span>
+          <p> HTML, MySQL, CSS, Bootstrap</p>
+          <a class="btn btn-primary" href="https://calberg.github.io/Word-Guess-Game/" role="button">Live</a>
+          <a class="btn btn-secondary" href="https://github.com/calberg/Word-Guess-Game" role="button">Github Code</a>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-      <!--<div class="icon-block">
-        <h5 class="center">CRUM Application</h5>
-        <img src="assets/images/Block-Party.png" id= "projects" alt="Block Party">
-        <h5><a href="https://calberg.github.io/Block-Party/">Block Party</a></h5>
-      </div>
-    </div> -->
-
-    <!-- <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="assets/images/Block-Party.png" alt="Block Party" style="width:300px;height:300px;">
-        </div>
-        <div class="flip-card-back">
-          <h1>CRUM Application</h1> 
-          <p>Create, Read, Update, Manage Message Boards</p> 
-          <p></p>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="col s12 m4">
-        <div class="icon-block">
-          <h5 class="center">React.js Application</h5>
-          <img src="assets/images/memory.png" id= "projects" alt="Memory Game">
-          <h5><a href="https://camp-wannagetajob.herokuapp.com/Memory">Memory Game</a></h5>
-        </div>
-      </div>
-    <div class="col s12 m4">
-      <div class="icon-block">
-        <h5 class="center">MERN Application</h5>
-        <img src="assets/images/wannagetajob.png" id= "projects" alt="Camp Wannagetajob">
-        <h5><a href="https://camp-wannagetajob.herokuapp.com">Camp Wannagetajob</a></h5>  
-
-      </div>
-    </div>
+     </div> 
   </div>
-  <div class="row">
-<!--   Projects Section Row 2   -->
-  <div class="col s12 m4">
-      <div class="icon-block">
-        <h5 class="center">Trivia Game</h5>
-        <img src="assets/images/trivia-game.jpg" id= "projects" alt="Trivia Game">
-        <h5><a href="https://calberg.github.io/TriviaGame/">Trivia Game</a></h5>  
-      </div>
-    </div>
-    <div class="col s12 m4">
-        <div class="icon-block">
-          <h5 class="center">Group Project #1</h5>
-          <img src="assets/images/group-project-1.jpg" id= "projects" alt="Group Project 1">
-          <h5><a href="https://calberg.github.io/UCSD-Group-Project-One/">CLM</a></h5>
-        </div>
-      </div>
-    <div class="col s12 m4">
-      <div class="icon-block">
-        <h5 class="center">Hangman Game</h5>
-        <img src="assets/images/word-guess.jpg" id= "projects" alt="Word Guess">
-        <h5><a href="https://calberg.github.io/Word-Guess-Game/">Word Guess Game</a></h5>          
-      </div>
-    </div>    
   </div>
-</div>
-</div>
+  </div>
 <!--   Parallax 2  -->
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
