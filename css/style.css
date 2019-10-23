@@ -17,6 +17,7 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
+  opacity: 0.8;
 }
   .parallax-container .section {
     width: 100%;
